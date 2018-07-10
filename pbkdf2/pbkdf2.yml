@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  pbkdf2:
+    lang: node8-express
+    handler: ./pbkdf2
+    image: alexellis2/pbkdf2
