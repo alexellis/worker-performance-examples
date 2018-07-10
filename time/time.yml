@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  time:
+    lang: node8-express
+    handler: ./time
+    image: alexellis2/time
+
+  
